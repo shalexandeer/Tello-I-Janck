@@ -4,11 +4,13 @@ import React from 'react';
 import { Logo } from '@/components/logo';
 import { Button } from '@/components/ui/button';
 import { OrganizationSwitcher, UserButton } from '@clerk/nextjs';
+import MobileSidebar from './mobile-sidebar';
 
 export const Navbar = () => {
   return (
     <nav className="fixed top-0 z-50 flex h-14 w-full items-center border-b bg-white px-4 shadow-sm">
       {/* Mobile sidebar */}
+      <MobileSidebar />
       <div className="flex w-full items-center justify-between gap-x-4">
         <div className="flex gap-x-4">
           <div className="hidden md:flex">
